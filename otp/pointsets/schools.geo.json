@@ -1,0 +1,2794 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "21AB00",
+      "properties": {
+        "brinnummer": "21AB",
+        "vestigingsnummer": "21AB00",
+        "vestigingsnaam": "Barlaeus Gymnasium",
+        "straatnaam": "Weteringschans",
+        "huisnummertoevoeging": "31",
+        "postcode": "1017 RV",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VWO": 1
+          },
+          "geslaagden": {
+            "VWO": 103
+          },
+          "kandidaten": {
+            "VWO": 107
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 810,
+        "label": "Barlaeus Gymnasium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8848119,
+          52.3622182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "21AF00",
+      "properties": {
+        "brinnummer": "21AF",
+        "vestigingsnummer": "21AF00",
+        "vestigingsnaam": "Vossius Gymnasium",
+        "straatnaam": "Messchaertstraat",
+        "huisnummertoevoeging": "1",
+        "postcode": "1077 WS",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VWO": 1
+          },
+          "geslaagden": {
+            "VWO": 137
+          },
+          "kandidaten": {
+            "VWO": 139
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 782,
+        "label": "Vossius Gymnasium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8840154,
+          52.3457133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16PN00",
+      "properties": {
+        "brinnummer": "16PN",
+        "vestigingsnummer": "16PN00",
+        "vestigingsnaam": "Joodse SGM Maimonides",
+        "straatnaam": "Noordbrabantstraat",
+        "huisnummertoevoeging": "17",
+        "postcode": "1083 BE",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1,
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 15,
+            "VMBO": 7,
+            "VWO": 8
+          },
+          "kandidaten": {
+            "HAVO": 17,
+            "VMBO": 8,
+            "VWO": 9
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 162,
+        "label": "Joodse SGM Maimonides"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8870606,
+          52.3255217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16PS00",
+      "properties": {
+        "brinnummer": "16PS",
+        "vestigingsnummer": "16PS00",
+        "vestigingsnaam": "Montessori SGM Amsterdam",
+        "straatnaam": "Pieter de Hoochstraat",
+        "huisnummertoevoeging": "59",
+        "postcode": "1071 ED",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1,
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 118,
+            "VMBO": 45,
+            "VWO": 101
+          },
+          "kandidaten": {
+            "HAVO": 125,
+            "VMBO": 46,
+            "VWO": 115
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 1693,
+        "label": "Montessori SGM Amsterdam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8854962,
+          52.354932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16PS04",
+      "properties": {
+        "brinnummer": "16PS",
+        "vestigingsnummer": "16PS04",
+        "vestigingsnaam": "Montessori SGM Amsterdam",
+        "straatnaam": "Rustenburgerstraat",
+        "huisnummertoevoeging": "15",
+        "postcode": "1074 EP",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1,
+            "HAVO": 1
+          },
+          "geslaagden": {
+            "HAVO": 42,
+            "VMBO": 51
+          },
+          "kandidaten": {
+            "HAVO": 49,
+            "VMBO": 57
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 475,
+        "label": "Montessori SGM Amsterdam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9053399,
+          52.3538493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16PS07",
+      "properties": {
+        "brinnummer": "16PS",
+        "vestigingsnummer": "16PS07",
+        "vestigingsnaam": "Montessori SGM Amsterdam",
+        "straatnaam": "Mauritskade",
+        "huisnummertoevoeging": "58",
+        "postcode": "1092 AD",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+          },
+          "geslaagden": {
+            "HAVO": 0,
+            "VMBO": 0,
+            "VWO": 0
+          },
+          "kandidaten": {
+            "HAVO": 0,
+            "VMBO": 0,
+            "VWO": 0
+          }
+        },
+        "leerlingen": 557,
+        "label": "Montessori SGM Amsterdam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9181865,
+          52.3617709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16PS08",
+      "properties": {
+        "brinnummer": "16PS",
+        "vestigingsnummer": "16PS08",
+        "vestigingsnaam": "Montessori SGM Amsterdam",
+        "straatnaam": "Polderweg",
+        "huisnummertoevoeging": "3",
+        "postcode": "1093 KL",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1,
+            "MAVO": 1,
+            "PRO": 1
+          },
+          "geslaagden": {
+            "VMBO": 100
+          },
+          "kandidaten": {
+            "VMBO": 145
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 1040,
+        "label": "Montessori SGM Amsterdam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9297781,
+          52.3580953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16PS16",
+      "properties": {
+        "brinnummer": "16PS",
+        "vestigingsnummer": "16PS16",
+        "vestigingsnaam": "Montessori SGM Amsterdam",
+        "straatnaam": "Voorm Stadstimmertuin",
+        "huisnummertoevoeging": "2",
+        "postcode": "1018 ET",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+          }
+        },
+        "leerlingen": 135,
+        "label": "Montessori SGM Amsterdam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9063994,
+          52.3616247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16PS17",
+      "properties": {
+        "brinnummer": "16PS",
+        "vestigingsnummer": "16PS17",
+        "vestigingsnaam": "Montessori SGM Amsterdam",
+        "straatnaam": "Van Ostadestraat",
+        "huisnummertoevoeging": "103",
+        "postcode": "1072 ST",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 35
+          },
+          "kandidaten": {
+            "HAVO": 39
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 26,
+        "label": "Montessori SGM Amsterdam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8925705,
+          52.3523643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "02AP00",
+      "properties": {
+        "brinnummer": "02AP",
+        "vestigingsnummer": "02AP00",
+        "vestigingsnaam": "Het Amsterdams Lyceum",
+        "straatnaam": "Valeriusplein",
+        "huisnummertoevoeging": "15",
+        "postcode": "1075 BJ",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 0,
+            "VWO": 171
+          },
+          "kandidaten": {
+            "HAVO": 0,
+            "VWO": 178
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 1082,
+        "label": "Het Amsterdams Lyceum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8647693,
+          52.3508658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "17YS00",
+      "properties": {
+        "brinnummer": "17YS",
+        "vestigingsnummer": "17YS00",
+        "vestigingsnaam": "Esprit Scholen",
+        "straatnaam": "Burg Hogguerstraat",
+        "huisnummertoevoeging": "2",
+        "postcode": "1064 EB",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1,
+            "MAVO": 1,
+            "HAVO": 1,
+            "VWO": 1,
+            "PRO": 1
+          },
+          "geslaagden": {
+            "HAVO": 5,
+            "VMBO": 105
+          },
+          "kandidaten": {
+            "HAVO": 11,
+            "VMBO": 127
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 1267,
+        "label": "Esprit Scholen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8308102,
+          52.3731485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "17YS02",
+      "properties": {
+        "brinnummer": "17YS",
+        "vestigingsnummer": "17YS02",
+        "vestigingsnaam": "Esprit Scholengroep",
+        "straatnaam": "Piet Mondriaanstraat",
+        "huisnummertoevoeging": "140",
+        "postcode": "1061 TT",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+          }
+        },
+        "leerlingen": 188,
+        "label": "Esprit Scholengroep"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8371097,
+          52.3660596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "17YS03",
+      "properties": {
+        "brinnummer": "17YS",
+        "vestigingsnummer": "17YS03",
+        "vestigingsnaam": "Esprit Scholengroep",
+        "straatnaam": "Pieter Lodewijk Takstr",
+        "huisnummertoevoeging": "33 -34",
+        "postcode": "1073 KJ",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1,
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 52,
+            "VMBO": 45,
+            "VWO": 30
+          },
+          "kandidaten": {
+            "HAVO": 63,
+            "VMBO": 59,
+            "VWO": 39
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 1269,
+        "label": "Esprit Scholengroep"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.899863499999999,
+          52.3489696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "17YS04",
+      "properties": {
+        "brinnummer": "17YS",
+        "vestigingsnummer": "17YS04",
+        "vestigingsnaam": "Esprit Scholengroep",
+        "straatnaam": "Jan van Galenstraat",
+        "huisnummertoevoeging": "31",
+        "postcode": "1051 KM",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1,
+            "MAVO": 1
+          },
+          "geslaagden": {
+            "VMBO": 188
+          },
+          "kandidaten": {
+            "VMBO": 214
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 711,
+        "label": "Esprit Scholengroep"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.865999,
+          52.3752679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "17YS08",
+      "properties": {
+        "brinnummer": "17YS",
+        "vestigingsnummer": "17YS08",
+        "vestigingsnaam": "Esprit Scholengroep",
+        "straatnaam": "Frederik Hendrikplnts",
+        "huisnummertoevoeging": "7-A",
+        "postcode": "1052 XN",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 49,
+            "VWO": 35
+          },
+          "kandidaten": {
+            "HAVO": 57,
+            "VWO": 37
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 753,
+        "label": "Esprit Scholengroep"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8765417,
+          52.3779383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "17YS12",
+      "properties": {
+        "brinnummer": "17YS",
+        "vestigingsnummer": "17YS12",
+        "vestigingsnaam": "Esprit Scholengroep",
+        "straatnaam": "Herman Poortstraat",
+        "huisnummertoevoeging": "17",
+        "postcode": "1064 BR",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+          }
+        },
+        "leerlingen": 49,
+        "label": "Esprit Scholengroep"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8315448,
+          52.3766302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "30GC00",
+      "properties": {
+        "brinnummer": "30GC",
+        "vestigingsnummer": "30GC00",
+        "vestigingsnaam": "Het 4e Gymnasium",
+        "straatnaam": "Stavangerweg",
+        "huisnummertoevoeging": "902",
+        "postcode": "1013 AX",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VWO": 1
+          },
+          "geslaagden": {
+            "VWO": 81
+          },
+          "kandidaten": {
+            "VWO": 90
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 738,
+        "label": "Het 4e Gymnasium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.878063099999999,
+          52.39318590000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "25EF03",
+      "properties": {
+        "brinnummer": "25EF",
+        "vestigingsnummer": "25EF03",
+        "vestigingsnaam": "Clusius College Amsterdam",
+        "straatnaam": "Rode Kruisstraat",
+        "huisnummertoevoeging": "40",
+        "postcode": "1025 KN",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1
+          },
+          "geslaagden": {
+            "VMBO": 45
+          },
+          "kandidaten": {
+            "VMBO": 45
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 250,
+        "label": "Clusius College Amsterdam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9270485,
+          52.3962375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01ET00",
+      "properties": {
+        "brinnummer": "01ET",
+        "vestigingsnummer": "01ET00",
+        "vestigingsnaam": "St Ignatiusgymnasium",
+        "straatnaam": "Jan van Eijckstraat",
+        "huisnummertoevoeging": "47",
+        "postcode": "1077 LH",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VWO": 1
+          },
+          "geslaagden": {
+            "VWO": 114
+          },
+          "kandidaten": {
+            "VWO": 116
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 799,
+        "label": "St Ignatiusgymnasium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8739307,
+          52.3497504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "02AN00",
+      "properties": {
+        "brinnummer": "02AN",
+        "vestigingsnummer": "02AN00",
+        "vestigingsnaam": "Fons Vitae Lyceum",
+        "straatnaam": "Reijnier Vinkeleskade",
+        "huisnummertoevoeging": "53",
+        "postcode": "1071 SW",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 67,
+            "VWO": 89
+          },
+          "kandidaten": {
+            "HAVO": 73,
+            "VWO": 99
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 990,
+        "label": "Fons Vitae Lyceum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8784724,
+          52.3517383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14SE00",
+      "properties": {
+        "brinnummer": "14SE",
+        "vestigingsnummer": "14SE00",
+        "vestigingsnaam": "Sgm Sint Nicolaas Lyceum",
+        "straatnaam": "Beethovenplein",
+        "huisnummertoevoeging": "2",
+        "postcode": "1077 WM",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 72,
+            "VWO": 57
+          },
+          "kandidaten": {
+            "HAVO": 77,
+            "VWO": 74
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 1125,
+        "label": "Sgm Sint Nicolaas Lyceum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8770802,
+          52.34675559999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "21FF00",
+      "properties": {
+        "brinnummer": "21FF",
+        "vestigingsnummer": "21FF00",
+        "vestigingsnaam": "SGM Reigersbos",
+        "straatnaam": "Ravenswaaipad",
+        "huisnummertoevoeging": "3",
+        "postcode": "1106 AW",
+        "plaatsnaam": "AMSTERDAM ZUIDOOST",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1,
+            "MAVO": 1,
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 31,
+            "VMBO": 102,
+            "VWO": 7
+          },
+          "kandidaten": {
+            "HAVO": 36,
+            "VMBO": 108,
+            "VWO": 10
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 811,
+        "label": "SGM Reigersbos"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9780045,
+          52.2971462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01OE22",
+      "properties": {
+        "brinnummer": "01OE",
+        "vestigingsnummer": "01OE22",
+        "vestigingsnaam": "Wellantcollege",
+        "straatnaam": "Jan van Zutphenstraat",
+        "huisnummertoevoeging": "60",
+        "postcode": "1069 RS",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1
+          },
+          "geslaagden": {
+            "VMBO": 98
+          },
+          "kandidaten": {
+            "VMBO": 102
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 417,
+        "label": "Wellantcollege"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7953801,
+          52.3497342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01OE23",
+      "properties": {
+        "brinnummer": "01OE",
+        "vestigingsnummer": "01OE23",
+        "vestigingsnaam": "Wellantcollege",
+        "straatnaam": "Archimedesplantsoen",
+        "huisnummertoevoeging": "87",
+        "postcode": "1098 JZ",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1,
+            "PRO": 1
+          },
+          "geslaagden": {
+            "VMBO": 27
+          },
+          "kandidaten": {
+            "VMBO": 28
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 315,
+        "label": "Wellantcollege"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.945153299999999,
+          52.3531027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "28AC00",
+      "properties": {
+        "brinnummer": "28AC",
+        "vestigingsnummer": "28AC00",
+        "vestigingsnaam": "De Passie",
+        "straatnaam": "Zekeringstraat",
+        "huisnummertoevoeging": "38 -40",
+        "postcode": "1014 BT",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1,
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 9,
+            "VMBO": 20,
+            "VWO": 7
+          },
+          "kandidaten": {
+            "HAVO": 14,
+            "VMBO": 24,
+            "VWO": 10
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 63,
+        "label": "De Passie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8502594,
+          52.396849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01TC00",
+      "properties": {
+        "brinnummer": "01TC",
+        "vestigingsnummer": "01TC00",
+        "vestigingsnaam": "Hervormd Lyceum West",
+        "straatnaam": "Hemsterhuisstraat",
+        "huisnummertoevoeging": "79",
+        "postcode": "1065 JX",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1,
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 52,
+            "VMBO": 58,
+            "VWO": 27
+          },
+          "kandidaten": {
+            "HAVO": 66,
+            "VMBO": 66,
+            "VWO": 29
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 825,
+        "label": "Hervormd Lyceum West"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8256286,
+          52.36254539999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "02AR00",
+      "properties": {
+        "brinnummer": "02AR",
+        "vestigingsnummer": "02AR00",
+        "vestigingsnaam": "Het Hervormd Lyc Zuid",
+        "straatnaam": "Brahmsstraat",
+        "huisnummertoevoeging": "7",
+        "postcode": "1077 HE",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 50,
+            "VWO": 54
+          },
+          "kandidaten": {
+            "HAVO": 58,
+            "VWO": 74
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 942,
+        "label": "Het Hervormd Lyc Zuid"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.878792,
+          52.3481806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "02TE00",
+      "properties": {
+        "brinnummer": "02TE",
+        "vestigingsnummer": "02TE00",
+        "vestigingsnaam": "H Wesselink College",
+        "straatnaam": "Startbaan",
+        "huisnummertoevoeging": "3",
+        "postcode": "1185 XP",
+        "plaatsnaam": "AMSTELVEEN",
+        "gemeentenummer": "0362",
+        "gemeentenaam": "AMSTELVEEN",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1,
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 106,
+            "VMBO": 80,
+            "VWO": 107
+          },
+          "kandidaten": {
+            "HAVO": 119,
+            "VMBO": 89,
+            "VWO": 117
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 1590,
+        "label": "H Wesselink College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8552861,
+          52.287688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14VY00",
+      "properties": {
+        "brinnummer": "14VY",
+        "vestigingsnummer": "14VY00",
+        "vestigingsnaam": "Chr Sgm Buitenveldert",
+        "straatnaam": "De Cuserstraat",
+        "huisnummertoevoeging": "3",
+        "postcode": "1081 CK",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1,
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 35,
+            "VMBO": 76,
+            "VWO": 15
+          },
+          "kandidaten": {
+            "HAVO": 39,
+            "VMBO": 89,
+            "VWO": 19
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 797,
+        "label": "Chr Sgm Buitenveldert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8673997,
+          52.3234147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "16TS00",
+      "properties": {
+        "brinnummer": "16TS",
+        "vestigingsnummer": "16TS00",
+        "vestigingsnaam": "Vrije School N Holland",
+        "straatnaam": "Fred. Roeskestraat",
+        "huisnummertoevoeging": "84",
+        "postcode": "1076 ED",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1,
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 42,
+            "VMBO": 39,
+            "VWO": 18
+          },
+          "kandidaten": {
+            "HAVO": 51,
+            "VMBO": 41,
+            "VWO": 21
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 770,
+        "label": "Vrije School N Holland"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.863005100000001,
+          52.3415596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "21BH00",
+      "properties": {
+        "brinnummer": "21BH",
+        "vestigingsnummer": "21BH00",
+        "vestigingsnaam": "SGM Dalton Spinozalyceum",
+        "straatnaam": "Peter van Anrooystraat",
+        "huisnummertoevoeging": "8",
+        "postcode": "1076 BH",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1,
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 74,
+            "VMBO": 70,
+            "VWO": 60
+          },
+          "kandidaten": {
+            "HAVO": 77,
+            "VMBO": 81,
+            "VWO": 65
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 1230,
+        "label": "SGM Dalton Spinozalyceum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8659858,
+          52.3426513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "28DH00",
+      "properties": {
+        "brinnummer": "28DH",
+        "vestigingsnummer": "28DH00",
+        "vestigingsnaam": "IJburg College",
+        "straatnaam": "Pampuslaan",
+        "huisnummertoevoeging": "1",
+        "postcode": "1087 HP",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1,
+            "MAVO": 1,
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 18,
+            "VMBO": 42,
+            "VWO": 12
+          },
+          "kandidaten": {
+            "HAVO": 22,
+            "VMBO": 52,
+            "VWO": 15
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 1127,
+        "label": "IJburg College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0075474,
+          52.3527729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "21GD00",
+      "properties": {
+        "brinnummer": "21GD",
+        "vestigingsnummer": "21GD00",
+        "vestigingsnaam": "Calandlyceum",
+        "straatnaam": "Pieter Calandlaan",
+        "huisnummertoevoeging": "182",
+        "postcode": "1068 NT",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1,
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 142,
+            "VMBO": 123,
+            "VWO": 69
+          },
+          "kandidaten": {
+            "HAVO": 170,
+            "VMBO": 148,
+            "VWO": 87
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 1892,
+        "label": "Calandlyceum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8059839,
+          52.3536785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "21GD01",
+      "properties": {
+        "brinnummer": "21GD",
+        "vestigingsnummer": "21GD01",
+        "vestigingsnaam": "Calandlyceum",
+        "straatnaam": "Anderlechtlaan",
+        "huisnummertoevoeging": "3",
+        "postcode": "1066 HK",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+          }
+        },
+        "leerlingen": 251,
+        "label": "Calandlyceum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8115901,
+          52.3438552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "21AS00",
+      "properties": {
+        "brinnummer": "21AS",
+        "vestigingsnummer": "21AS00",
+        "vestigingsnaam": "Bredero College",
+        "straatnaam": "Buiksloterweg",
+        "huisnummertoevoeging": "85",
+        "postcode": "1031 CG",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 64,
+            "VMBO": 0,
+            "VWO": 18
+          },
+          "kandidaten": {
+            "HAVO": 73,
+            "VMBO": 0,
+            "VWO": 22
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 388,
+        "label": "Bredero College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.912586399999999,
+          52.3870939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "21AS03",
+      "properties": {
+        "brinnummer": "21AS",
+        "vestigingsnummer": "21AS03",
+        "vestigingsnaam": "Bredero College",
+        "straatnaam": "Meeuwenlaan",
+        "huisnummertoevoeging": "132 -136",
+        "postcode": "1022 AM",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1
+          },
+          "geslaagden": {
+            "VMBO": 69
+          },
+          "kandidaten": {
+            "VMBO": 74
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 383,
+        "label": "Bredero College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9255208,
+          52.3891582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "21AS07",
+      "properties": {
+        "brinnummer": "21AS",
+        "vestigingsnummer": "21AS07",
+        "vestigingsnaam": "Bredero College",
+        "straatnaam": "J.H. Hisgenpad",
+        "huisnummertoevoeging": "15",
+        "postcode": "1025 WK",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1
+          },
+          "geslaagden": {
+            "VMBO": 76
+          },
+          "kandidaten": {
+            "VMBO": 94
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 323,
+        "label": "Bredero College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9278138,
+          52.4003658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "21AS08",
+      "properties": {
+        "brinnummer": "21AS",
+        "vestigingsnummer": "21AS08",
+        "vestigingsnaam": "Bredero College",
+        "straatnaam": "Tolhuisweg",
+        "huisnummertoevoeging": "6",
+        "postcode": "1031 CL",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VWO": 1
+          }
+        },
+        "leerlingen": 351,
+        "label": "Bredero College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.905382599999999,
+          52.3841441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "00EF00",
+      "properties": {
+        "brinnummer": "00EF",
+        "vestigingsnummer": "00EF00",
+        "vestigingsnaam": "VMBO onder bestuur ROC v A'dam",
+        "straatnaam": "Reinaert de Vosstraat",
+        "huisnummertoevoeging": "27",
+        "postcode": "1055 CL",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1
+          },
+          "geslaagden": {
+            "VMBO": 36
+          },
+          "kandidaten": {
+            "VMBO": 39
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 288,
+        "label": "VMBO onder bestuur ROC v A'dam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8546983,
+          52.3783544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "09VK00",
+      "properties": {
+        "brinnummer": "09VK",
+        "vestigingsnummer": "09VK00",
+        "vestigingsnaam": "VMBO onder bestuur ROC v A'dam",
+        "straatnaam": "Wibautstraat",
+        "huisnummertoevoeging": "220",
+        "postcode": "1097 DN",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1
+          },
+          "geslaagden": {
+            "VMBO": 60
+          },
+          "kandidaten": {
+            "VMBO": 66
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 252,
+        "label": "VMBO onder bestuur ROC v A'dam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9165239,
+          52.3496578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14RL00",
+      "properties": {
+        "brinnummer": "14RL",
+        "vestigingsnummer": "14RL00",
+        "vestigingsnaam": "VMBO onder bestuur ROC v A'dam",
+        "straatnaam": "Mr. Treublaan",
+        "huisnummertoevoeging": "1 -3",
+        "postcode": "1097 DP",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1
+          },
+          "geslaagden": {
+            "VMBO": 72
+          },
+          "kandidaten": {
+            "VMBO": 75
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 313,
+        "label": "VMBO onder bestuur ROC v A'dam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9142442,
+          52.3473479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14RL02",
+      "properties": {
+        "brinnummer": "14RL",
+        "vestigingsnummer": "14RL02",
+        "vestigingsnaam": "VMBO onder bestuur ROC v A'dam",
+        "straatnaam": "Bijlmerdreef",
+        "huisnummertoevoeging": "1289",
+        "postcode": "1103 TV",
+        "plaatsnaam": "AMSTERDAM ZUIDOOST",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1
+          }
+        },
+        "leerlingen": 96,
+        "label": "VMBO onder bestuur ROC v A'dam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.976153699999999,
+          52.3229167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14RL03",
+      "properties": {
+        "brinnummer": "14RL",
+        "vestigingsnummer": "14RL03",
+        "vestigingsnaam": "VMBO onder bestuur ROC v A'dam",
+        "straatnaam": "Rietwijkerstraat",
+        "huisnummertoevoeging": "55",
+        "postcode": "1059 VX",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1
+          },
+          "geslaagden": {
+            "VMBO": 21
+          },
+          "kandidaten": {
+            "VMBO": 23
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 151,
+        "label": "VMBO onder bestuur ROC v A'dam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8471491,
+          52.34944249999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14RL06",
+      "properties": {
+        "brinnummer": "14RL",
+        "vestigingsnummer": "14RL06",
+        "vestigingsnaam": "VMBO onder bestuur ROC v A'dam",
+        "straatnaam": "Javaplantsoen",
+        "huisnummertoevoeging": "24",
+        "postcode": "1095 CS",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "PRO": 1
+          }
+        },
+        "leerlingen": 172,
+        "label": "VMBO onder bestuur ROC v A'dam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9443532,
+          52.3626895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14RL07",
+      "properties": {
+        "brinnummer": "14RL",
+        "vestigingsnummer": "14RL07",
+        "vestigingsnaam": "VMBO onder bestuur ROC v A'dam",
+        "straatnaam": "Erik de Roodestraat",
+        "huisnummertoevoeging": "18",
+        "postcode": "1056 AM",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1
+          }
+        },
+        "leerlingen": 75,
+        "label": "VMBO onder bestuur ROC v A'dam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8447865,
+          52.37342899999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "19XY00",
+      "properties": {
+        "brinnummer": "19XY",
+        "vestigingsnummer": "19XY00",
+        "vestigingsnaam": "Amstelveen College",
+        "straatnaam": "Sportlaan",
+        "huisnummertoevoeging": "27",
+        "postcode": "1185 TB",
+        "plaatsnaam": "AMSTELVEEN",
+        "gemeentenummer": "0362",
+        "gemeentenaam": "AMSTELVEEN",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1,
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 94,
+            "VMBO": 100,
+            "VWO": 51
+          },
+          "kandidaten": {
+            "HAVO": 110,
+            "VMBO": 108,
+            "VWO": 55
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 1601,
+        "label": "Amstelveen College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8460662,
+          52.2916798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03AQ00",
+      "properties": {
+        "brinnummer": "03AQ",
+        "vestigingsnummer": "03AQ00",
+        "vestigingsnaam": "Open Sgm Bylmer",
+        "straatnaam": "Gulden Kruis",
+        "huisnummertoevoeging": "5",
+        "postcode": "1103 BE",
+        "plaatsnaam": "AMSTERDAM ZUIDOOST",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1,
+            "MAVO": 1,
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 86,
+            "VMBO": 228,
+            "VWO": 18
+          },
+          "kandidaten": {
+            "HAVO": 90,
+            "VMBO": 238,
+            "VWO": 18
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 1621,
+        "label": "Open Sgm Bylmer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.964854900000001,
+          52.3187605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14RF00",
+      "properties": {
+        "brinnummer": "14RF",
+        "vestigingsnummer": "14RF00",
+        "vestigingsnaam": "SGM Oost/Zuidoost",
+        "straatnaam": "Nobelweg",
+        "huisnummertoevoeging": "6",
+        "postcode": "1097 AR",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 54,
+            "VWO": 39
+          },
+          "kandidaten": {
+            "HAVO": 59,
+            "VWO": 47
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 1043,
+        "label": "SGM Oost/Zuidoost"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9237747,
+          52.34961449999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14RF03",
+      "properties": {
+        "brinnummer": "14RF",
+        "vestigingsnummer": "14RF03",
+        "vestigingsnaam": "SGM Oost/Zuidoost",
+        "straatnaam": "Lavoisierstraat",
+        "huisnummertoevoeging": "2",
+        "postcode": "1098 TH",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1,
+            "MAVO": 1
+          },
+          "geslaagden": {
+            "VMBO": 97
+          },
+          "kandidaten": {
+            "VMBO": 102
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 460,
+        "label": "SGM Oost/Zuidoost"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.943773999999999,
+          52.3514557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14RF04",
+      "properties": {
+        "brinnummer": "14RF",
+        "vestigingsnummer": "14RF04",
+        "vestigingsnaam": "SGM Oost/Zuidoost",
+        "straatnaam": "Dubbelink",
+        "huisnummertoevoeging": "1",
+        "postcode": "1102 AL",
+        "plaatsnaam": "AMSTERDAM ZUIDOOST",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1,
+            "MAVO": 1
+          },
+          "geslaagden": {
+            "VMBO": 65
+          },
+          "kandidaten": {
+            "VMBO": 81
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 487,
+        "label": "SGM Oost/Zuidoost"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.948905799999999,
+          52.3224055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "14RF06",
+      "properties": {
+        "brinnummer": "14RF",
+        "vestigingsnummer": "14RF06",
+        "vestigingsnaam": "SGM Oost/Zuidoost loc Cygnus",
+        "straatnaam": "Vrolikstraat",
+        "huisnummertoevoeging": "8",
+        "postcode": "1091 VG",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VWO": 1
+          },
+          "geslaagden": {
+            "VWO": 41
+          },
+          "kandidaten": {
+            "VWO": 41
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 687,
+        "label": "SGM Oost/Zuidoost loc Cygnus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9124605,
+          52.35495340000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "17HB00",
+      "properties": {
+        "brinnummer": "17HB",
+        "vestigingsnummer": "17HB00",
+        "vestigingsnaam": "SGM Nieuw-West",
+        "straatnaam": "Derkinderenstraat",
+        "huisnummertoevoeging": "44",
+        "postcode": "1062 BJ",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 52,
+            "VWO": 21
+          },
+          "kandidaten": {
+            "HAVO": 71,
+            "VWO": 24
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 700,
+        "label": "SGM Nieuw-West"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8409305,
+          52.3598218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "17HB03",
+      "properties": {
+        "brinnummer": "17HB",
+        "vestigingsnummer": "17HB03",
+        "vestigingsnaam": "SGM Nieuw-West",
+        "straatnaam": "Karel Klinkenbergstraat",
+        "huisnummertoevoeging": "1",
+        "postcode": "1061 AH",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1
+          },
+          "geslaagden": {
+            "VMBO": 41
+          },
+          "kandidaten": {
+            "VMBO": 56
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 364,
+        "label": "SGM Nieuw-West"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.835446,
+          52.3664293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "17HB06",
+      "properties": {
+        "brinnummer": "17HB",
+        "vestigingsnummer": "17HB06",
+        "vestigingsnaam": "SGM Nieuw-West",
+        "straatnaam": "Schipluidenlaan",
+        "huisnummertoevoeging": "12",
+        "postcode": "1062 HE",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1
+          },
+          "geslaagden": {
+            "VMBO": 58
+          },
+          "kandidaten": {
+            "VMBO": 69
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 508,
+        "label": "SGM Nieuw-West"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.838187599999999,
+          52.3572656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "17HB07",
+      "properties": {
+        "brinnummer": "17HB",
+        "vestigingsnummer": "17HB07",
+        "vestigingsnaam": "SGM Nieuw-West",
+        "straatnaam": "Dr Jan van Breemenstraat",
+        "huisnummertoevoeging": "1",
+        "postcode": "1056 AB",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1
+          },
+          "geslaagden": {
+            "VMBO": 37
+          },
+          "kandidaten": {
+            "VMBO": 37
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 246,
+        "label": "SGM Nieuw-West"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8437131,
+          52.3699548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "17VF00",
+      "properties": {
+        "brinnummer": "17VF",
+        "vestigingsnummer": "17VF00",
+        "vestigingsnaam": "Bernard Nieuwentijt College",
+        "straatnaam": "Rode Kruisstraat",
+        "huisnummertoevoeging": "83",
+        "postcode": "1025 KM",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 71,
+            "VWO": 61
+          },
+          "kandidaten": {
+            "HAVO": 87,
+            "VWO": 70
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 1051,
+        "label": "Bernard Nieuwentijt College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.926571399999999,
+          52.3954986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "17VF01",
+      "properties": {
+        "brinnummer": "17VF",
+        "vestigingsnummer": "17VF01",
+        "vestigingsnaam": "Bernard Nieuwentijt College",
+        "straatnaam": "Schoenerstraat",
+        "huisnummertoevoeging": "7",
+        "postcode": "1034 XZ",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1
+          },
+          "geslaagden": {
+            "VMBO": 51
+          },
+          "kandidaten": {
+            "VMBO": 51
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 250,
+        "label": "Bernard Nieuwentijt College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9096426,
+          52.4040148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "17VF02",
+      "properties": {
+        "brinnummer": "17VF",
+        "vestigingsnummer": "17VF02",
+        "vestigingsnaam": "Bernard Nieuwentijt College",
+        "straatnaam": "Duinluststraat",
+        "huisnummertoevoeging": "20",
+        "postcode": "1024 VK",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1
+          },
+          "geslaagden": {
+            "VMBO": 49
+          },
+          "kandidaten": {
+            "VMBO": 49
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 326,
+        "label": "Bernard Nieuwentijt College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9535138,
+          52.3957711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "17VF03",
+      "properties": {
+        "brinnummer": "17VF",
+        "vestigingsnummer": "17VF03",
+        "vestigingsnaam": "Bernard Nieuwentijt College",
+        "straatnaam": "Floraweg",
+        "huisnummertoevoeging": "170",
+        "postcode": "1032 ZG",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1
+          },
+          "geslaagden": {
+            "VMBO": 122
+          },
+          "kandidaten": {
+            "VMBO": 135
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 630,
+        "label": "Bernard Nieuwentijt College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.912476000000001,
+          52.4001525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "17VF06",
+      "properties": {
+        "brinnummer": "17VF",
+        "vestigingsnummer": "17VF06",
+        "vestigingsnaam": "Bernard Nieuwentijt College",
+        "straatnaam": "Schoenerstraat",
+        "huisnummertoevoeging": "7-A",
+        "postcode": "1034 XZ",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1
+          }
+        },
+        "leerlingen": 85,
+        "label": "Bernard Nieuwentijt College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9096426,
+          52.4040148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "21ET00",
+      "properties": {
+        "brinnummer": "21ET",
+        "vestigingsnummer": "21ET00",
+        "vestigingsnaam": "SGM Amsterdam-Zuid",
+        "straatnaam": "Gerrit van der Veenstr",
+        "huisnummertoevoeging": "99",
+        "postcode": "1077 DT",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 62,
+            "VMBO": 0,
+            "VWO": 44
+          },
+          "kandidaten": {
+            "HAVO": 72,
+            "VMBO": 0,
+            "VWO": 51
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 849,
+        "label": "SGM Amsterdam-Zuid"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8744996,
+          52.3487822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "21ET02",
+      "properties": {
+        "brinnummer": "21ET",
+        "vestigingsnummer": "21ET02",
+        "vestigingsnaam": "SGM Amsterdam-Zuid",
+        "straatnaam": "Moreelsestraat",
+        "huisnummertoevoeging": "21",
+        "postcode": "1071 BJ",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1
+          },
+          "geslaagden": {
+            "VMBO": 77
+          },
+          "kandidaten": {
+            "VMBO": 102
+          },
+          "quality": {
+            "low": 1
+          }
+        },
+        "leerlingen": 576,
+        "label": "SGM Amsterdam-Zuid"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.881997999999999,
+          52.3553485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "21ET04",
+      "properties": {
+        "brinnummer": "21ET",
+        "vestigingsnummer": "21ET04",
+        "vestigingsnaam": "Sgm Amsterdam-Zuid",
+        "straatnaam": "2e C Huygensstr",
+        "huisnummertoevoeging": "31",
+        "postcode": "1054 NN",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1,
+            "MAVO": 1
+          },
+          "geslaagden": {
+            "VMBO": 123
+          },
+          "kandidaten": {
+            "VMBO": 128
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 545,
+        "label": "Sgm Amsterdam-Zuid"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.872469199999999,
+          52.3644031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "21ET07",
+      "properties": {
+        "brinnummer": "21ET",
+        "vestigingsnummer": "21ET07",
+        "vestigingsnaam": "SGM Amsterdam-Zuid",
+        "straatnaam": "Rustenburgerstraat",
+        "huisnummertoevoeging": "436 -438",
+        "postcode": "1072 HK",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1,
+            "MAVO": 1
+          },
+          "geslaagden": {
+            "VMBO": 85
+          },
+          "kandidaten": {
+            "VMBO": 88
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 394,
+        "label": "SGM Amsterdam-Zuid"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.888256,
+          52.3511982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "21ET08",
+      "properties": {
+        "brinnummer": "21ET",
+        "vestigingsnummer": "21ET08",
+        "vestigingsnaam": "SGM Amsterdam-Zuid",
+        "straatnaam": "Oudaen",
+        "huisnummertoevoeging": "6",
+        "postcode": "1081 BZ",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1,
+            "HAVO": 1
+          },
+          "geslaagden": {
+            "VMBO": 44
+          },
+          "kandidaten": {
+            "VMBO": 45
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 239,
+        "label": "SGM Amsterdam-Zuid"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.863970699999999,
+          52.32561949999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "00WD00",
+      "properties": {
+        "brinnummer": "00WD",
+        "vestigingsnummer": "00WD00",
+        "vestigingsnaam": "SGM Panta Rhei",
+        "straatnaam": "Pandora",
+        "huisnummertoevoeging": "1",
+        "postcode": "1183 KK",
+        "plaatsnaam": "AMSTELVEEN",
+        "gemeentenummer": "0362",
+        "gemeentenaam": "AMSTELVEEN",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1,
+            "MAVO": 1
+          },
+          "geslaagden": {
+            "VMBO": 155
+          },
+          "kandidaten": {
+            "VMBO": 167
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 808,
+        "label": "SGM Panta Rhei"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8785665,
+          52.3025372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "02PA00",
+      "properties": {
+        "brinnummer": "02PA",
+        "vestigingsnummer": "02PA00",
+        "vestigingsnaam": "Mediacollege Amsterdam Ma",
+        "straatnaam": "Dintelstraat",
+        "huisnummertoevoeging": "60",
+        "postcode": "1078 VV",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "VBO": 1
+          },
+          "geslaagden": {
+            "VMBO": 84
+          },
+          "kandidaten": {
+            "VMBO": 88
+          },
+          "quality": {
+            "high": 1
+          }
+        },
+        "leerlingen": 295,
+        "label": "Mediacollege Amsterdam Ma"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8928338,
+          52.3445371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "02QZ00",
+      "properties": {
+        "brinnummer": "02QZ",
+        "vestigingsnummer": "02QZ00",
+        "vestigingsnaam": "Keizer Karel College",
+        "straatnaam": "Elegast",
+        "huisnummertoevoeging": "5",
+        "postcode": "1185 AA",
+        "plaatsnaam": "AMSTELVEEN",
+        "gemeentenummer": "0362",
+        "gemeentenaam": "AMSTELVEEN",
+        "structured": {
+          "onderwijsstructuur": {
+            "HAVO": 1,
+            "VWO": 1
+          },
+          "geslaagden": {
+            "HAVO": 96,
+            "VWO": 145
+          },
+          "kandidaten": {
+            "HAVO": 101,
+            "VWO": 161
+          },
+          "quality": {
+            "medium": 1
+          }
+        },
+        "leerlingen": 1713,
+        "label": "Keizer Karel College"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.850327099999999,
+          52.3022005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "09PY00",
+      "properties": {
+        "brinnummer": "09PY",
+        "vestigingsnummer": "09PY00",
+        "vestigingsnaam": "Praktijkschool De Atlant",
+        "straatnaam": "Teilingen",
+        "huisnummertoevoeging": "4",
+        "postcode": "1082 JS",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "PRO": 1
+          }
+        },
+        "leerlingen": 208,
+        "label": "Praktijkschool De Atlant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8726508,
+          52.3272215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "10JY00",
+      "properties": {
+        "brinnummer": "10JY",
+        "vestigingsnummer": "10JY00",
+        "vestigingsnaam": "Het Plein",
+        "straatnaam": "Jan de Louterpad",
+        "huisnummertoevoeging": "5",
+        "postcode": "1063 ME",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "PRO": 1
+          }
+        },
+        "leerlingen": 212,
+        "label": "Het Plein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8193191,
+          52.3794842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "26HP00",
+      "properties": {
+        "brinnummer": "26HP",
+        "vestigingsnummer": "26HP00",
+        "vestigingsnaam": "PRO College Noord",
+        "straatnaam": "Oostzanerdijk",
+        "huisnummertoevoeging": "139",
+        "postcode": "1035 EX",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "PRO": 1
+          }
+        },
+        "leerlingen": 199,
+        "label": "PRO College Noord"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8800593,
+          52.41988019999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "27VH00",
+      "properties": {
+        "brinnummer": "27VH",
+        "vestigingsnummer": "27VH00",
+        "vestigingsnaam": "Praktijkschool De Dreef",
+        "straatnaam": "Dubbelink",
+        "huisnummertoevoeging": "3",
+        "postcode": "1102 AL",
+        "plaatsnaam": "AMSTERDAM ZUIDOOST",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "PRO": 1
+          }
+        },
+        "leerlingen": 163,
+        "label": "Praktijkschool De Dreef"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.950457,
+          52.32276179999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "23GF00",
+      "properties": {
+        "brinnummer": "23GF",
+        "vestigingsnummer": "23GF00",
+        "vestigingsnaam": "Stg Cheider VO",
+        "straatnaam": "Zeelandstraat",
+        "huisnummertoevoeging": "11",
+        "postcode": "1082 BV",
+        "plaatsnaam": "AMSTERDAM",
+        "gemeentenummer": "0363",
+        "gemeentenaam": "AMSTERDAM",
+        "structured": {
+          "onderwijsstructuur": {
+            "MAVO": 1,
+            "HAVO": 1,
+            "VWO": 1
+          }
+        },
+        "leerlingen": 45,
+        "label": "Stg Cheider VO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.879022,
+          52.3268086
+        ]
+      }
+    }
+  ]
+}
