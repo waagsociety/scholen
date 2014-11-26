@@ -1,0 +1,4 @@
+endpoint: http://localhost:8080/otp/
+pointset: schools.geo
+indicator: kandidaten
+

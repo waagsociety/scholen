@@ -1,0 +1,67 @@
+- name: traveltime
+  title: Maximale reistijd (minuten)
+  type: range
+  config:
+    value: 20
+    min: 10
+    max: 60
+    step: 2
+    units: minuten
+
+- name: transportation
+  title: Vervoersmiddelen
+  type: checkbox
+  config:
+    options:
+      - title: Te voet
+        value: walking
+      - title: Fiets
+        value: bicycle
+      - title: OV
+        value: public_transport
+
+- name: schooltype
+  title: Schooltype
+  type: checkbox
+  config:
+    options:
+      - title: VMBO GT
+        value: vmbogt
+      - title: VMBO B
+        value: vmbob
+      - title: VMBO K
+        value: vmbok
+      - title: HAVO
+        value: havo
+      - title: VWO
+        value: vwo
+
+- name: eindexamencijfer
+  title: Minimaal gemiddeld eindexamencijfer
+  type: range
+  config:
+    value: 4
+    min: 1
+    max: 10
+    step: 1
+    units:
+
+- name: dronkers
+  title: Minimaal Dronkerscijfer (2012)
+  type: range
+  config:
+    value: 4
+    min: 1
+    max: 10
+    step: 1
+    units:
+
+- name: students
+  title: Maximaal aantal leerlingen
+  type: range
+  config:
+    value: 2000
+    min: 100
+    max: 2000
+    step: 50
+    units:

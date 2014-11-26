@@ -1,98 +1,104 @@
+---
+---
 <!DOCTYPE html>
 <html>
   <head>
 		<meta charset="utf-8">
-    <title>Scholen in Amsterdam</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href='bower_components/leaflet/dist/leaflet.css' rel='stylesheet' />
-    <script src='bower_components/leaflet/dist/leaflet.js'></script>
-    <script src="bower_components/d3/d3.min.js" charset="utf-8"></script>
-    <script src='bower_components/leaflet-hash/leaflet-hash.js'></script>
-    <script src='LocationLayer.js'></script>
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
+    <link href='{{ site.baseurl }}/css/leaflet.css' rel='stylesheet' />
+    <script src='{{ site.baseurl }}/js/leaflet.js'></script>
+    <script src="{{ site.baseurl }}/js/d3.v3.min.js"></script>
+    <script src='{{ site.baseurl }}/js/leaflet-hash.js'></script>
+    <script src='{{ site.baseurl }}/js/OTPALayer.js'></script>
+    <script src='{{ site.baseurl }}/js/LocationLayer.js'></script>
   </head>
   <body>
     <ul id="menu">
       <li><div class="container">
-        <h1>Scholen in Amsterdam</h1>
+        <h1>{{ site.title }}</h1>
         <span>Verplaats marker naar uw adres</span>
 			</div></li>
+      {% for filter in site.data.filters %}
       <li><div class="container">
-        <span class="label">Maximale reistijd</span>
-				<input type="range" name="traveltime" value="30" min="10" max="90" step="5">
-			</div></li>
-      <li><div class="container">
-        <span class="label">Vervoersmiddelen</span>
-				<div class="buttonset">
-					<input type="checkbox" name="transportation" checked="checked" id="transportation1"><label for="transportation1">Te voet</label>
-					<input type="checkbox" name="transportation" checked="checked" id="transportation2"><label for="transportation2">Fiets</label>
-					<input type="checkbox" name="transportation" checked="checked" id="transportation3"><label for="transportation3">OV</label>
-				</div>
-
-			</div></li>
-      <li><div class="container">
-        <span class="label">Schooltype</span>
-				<div class="buttonset">
-					<input type="checkbox" name="schooltype" checked="checked" id="schooltype1"><label for="schooltype1">VMBO GT</label>
-					<input type="checkbox" name="schooltype" checked="checked" id="schooltype2"><label for="schooltype2">VMBO B</label>
-					<input type="checkbox" name="schooltype" checked="checked" id="schooltype3"><label for="schooltype3">VMBO K</label>
-					<input type="checkbox" name="schooltype" checked="checked" id="schooltype4"><label for="schooltype4">HAVO</label>
-					<input type="checkbox" name="schooltype" checked="checked" id="schooltype5"><label for="schooltype5">VWO</label>
-				</div>
-			</div></li>
-      <li><div class="container">
-        <span class="label">Minimaal gemiddeld eindexamencijfer</span>
-				<input type="range" name="eindexamencijfer" value="4" min="1" max="10">
-				<label for="value">
-			</div></li>
-      <li><div class="container">
-        <span class="label">Minimaal Dronkerscijfer (2012)</span>
-				<input type="range" name="dronkers" value="4" min="1" max="10">
-			</div></li>
-      <li><div class="container">
-        <span class="label">Maximaal aantal leerlingen</span>
-				<input type="range" name="leerlingen" value="2000" min="100" max="2000" step="50">
+        <span class="label">{{ filter.title }}</span>
+        {% if filter.type == 'range' %}
+				<input id="filter-{{ filter.name }}" type="{{ filter.type }}" name="filter-{{ filter.name }}"
+              value="{{ filter.config.value }}" min="{{ filter.config.min }}" max="{{ filter.config.max }}" step="{{ filter.config.step }}">
+        <label for="filter-{{ filter.name }}">{{ filter.config.value }}</label> <span>{{ filter.config.units }}</span>
+        {% elsif filter.type == 'checkbox' %}
+        <div class="buttonset">
+          {% for option in filter.config.options %}
+  				<input type="{{ filter.type }}" name="filter-{{ filter.name }}" checked="checked" id="filter-{{ filter.name }}{{ forloop.index }}" value="{{ option.value }}">
+          <label for="filter-{{ filter.name }}{{ forloop.index }}">{{ option.title }}</label>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div></li>
+      {% endfor %}
     </ul>
     <div id="map"></div>
     <script>
+      var endpoint = '{{ site.data.otpa.endpoint }}',
+          pointset = '{{ site.data.otpa.pointset }}',
+          indicator = '{{ site.data.otpa.indicator }}',
+          indicators = {};
 
-		var map = L.map('map', {
-      zoomControl: false,
-			minZoom: 10,
-			maxZoom: 18
-		});
+  		var map = L.map('map', {
+        zoomControl: false,
+  			minZoom: 10,
+  			maxZoom: 18
+  		});
 
-    map.setView([52.37278, 4.90032], 13);
-    var hash = new L.Hash(map);
+      map.setView([52.37278, 4.90032], 13);
+      var hash = new L.Hash(map);
 
-		var tileUrl = 'https://b.tiles.mapbox.com/v4/aj.03e9e12d/{z}/{x}/{y}.png?access_token=sk.eyJ1IjoiYmVydHNwYWFuIiwiYSI6InVOOERQamsifQ.t8Vq3xnXV2v6MOPw9MU6qg';
-		//var tileUrl = 'http://otile2.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png';
+  		var tileUrl = '{{ site.data.map.tiles }}',
+          tileLayer = L.tileLayer(tileUrl, {attribution: '{{ site.data.map.attribution }}'}).addTo(map);
 
-		var tileLayer = L.tileLayer(tileUrl, {
+      // // TODO: make sure order of on() and addTo() does not matter
+      var otpaLayer = L.otpaLayer(endpoint, {
+          cutoffMinutes: d3.select("#filter-traveltime").attr("max"),
+          isochroneMinutes: d3.select("#filter-traveltime").attr("value"),
+          colors: ['{{ site.data.style.1st_color }}', '{{ site.data.style.2nd_color }}', '{{ site.data.style.3rd_color }}'],
+          isochroneStep: {{ site.data.filters.first.config.step }},
+          pointset: pointset,
+          location: [52.37278, 4.90032]
+        }).on('pointsets', function(e) {
 
-      attribution: '<a href="https://www.mapbox.com/blog/pencil-drawn-style/"><i>Pencil</i> map style</a> by <a href="http://mapbox.com/">Mapbox</a> | Map © OpenStreetMap contributors'
-		}).addTo(map);
+        }).on('change', function(e) {
+          //update(indicators, range.value * 60);
+      }).addTo(map);
 
-		d3.json('isochrones.geojson', function(isochrones) {
-			L.geoJson(isochrones, {
-			    style: {
-			      color: '#ffd83c',
-			      //fillColor: '#ffd83c',
-			      fillColor: 'none',
-						opacity: 1,
-			      lineCap: 'round',
-			      lineJoin: 'round',
-			      weight: 4,
-			      //dashArray: '5, 5',
-			      //fillOpacity: '0.15'
-					}
-			}).addTo(map);
-		});
+      {% for filter in site.data.filters %}
+      {% if filter.type == 'range' %}
+      d3.select("#filter-{{ filter.name }}").on("input", function() {
+        var value = d3.select(this).property("value");
+        filterInput(this, value);
+        d3.select("label[for=filter-{{ filter.name }}]").html(value);
+      });
+      {% endif %}
+      {% endfor %}
 
-    L.locationLayer([52.37278, 4.90032], function(ll) {
-      console.log(ll);
-    }).addTo(map);
+      function filterInput(filter, value) {
+        if (filter.id === 'filter-traveltime') {
+          otpaLayer.setTimeLimit(value);
+        }
+      }
 
+      function update(data, seconds) {
+
+      }
     </script>
+    <svg>
+      <defs>
+        <pattern id="isochrone-pattern" patternUnits="userSpaceOnUse" x="0" y="0" width="8" height="8">
+          <g>
+            <path d="M0,0 L8,8"/>
+            <path d="M8,0 L-8,8"/>
+          </g>
+        </pattern>
+      </defs>
+    </svg>
   </body>
 </html>
