@@ -43,11 +43,14 @@ This website needs just data for the Amsterdam metropolitan area:
 You can download all the files needed for this project by running:
 
 ```sh
-wget https://s3.amazonaws.com/metro-extracts.mapzen.com/amsterdam_netherlands.osm.pbf -P otp/data
-wget http://gtfs.ovapi.nl/ns/gtfs-iffns-latest.zip -P otp/data
-wget http://gtfs.ovapi.nl/connexxion/gtfs-kv1connexxion-latest.zip -P otp/data
-wget http://gtfs.ovapi.nl/ebs/gtfs-kv1ebs-latest.zip -P otp/data
-wget http://gtfs.ovapi.nl/gvb/gtfs-kv1gvb-latest.zip -P otp/data
+cd otp/data
+wget https://s3.amazonaws.com/metro-extracts.mapzen.com/amsterdam_netherlands.osm.pbf
+wget http://gtfs.ovapi.nl/ns/gtfs-iffns-latest.zip
+wget http://gtfs.ovapi.nl/connexxion/gtfs-kv1connexxion-latest.zip
+wget http://gtfs.ovapi.nl/ebs/gtfs-kv1ebs-latest.zip
+wget http://gtfs.ovapi.nl/gvb/gtfs-kv1gvb-latest.zip
+cd ..
+cd ..
 ```
 
 Build the OpenTripPlanner graph:
