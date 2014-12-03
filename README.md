@@ -53,6 +53,24 @@ cd ..
 cd ..
 ```
 
+### Error in `gtfs-iffns-latest.zip`
+
+In some versions of the NS GTFS file (`gtfs-iffns-latest.zip`), the required field `agency_url` is missing in `agency.txt`:
+
+```csv
+751,U-OV,,Europe/Amsterdam,nl
+951,Eurostar,,Europe/Amsterdam,nl
+```
+
+To fix this, just open `agency.txt` and add a any URL:
+
+```csv
+751,U-OV,http://www.example.com/,Europe/Amsterdam,nl
+951,Eurostar,http://www.example.com/,Europe/Amsterdam,nl
+```
+
+### Build OTP graph
+
 Build the OpenTripPlanner graph:
 
 ```sh
