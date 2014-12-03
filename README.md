@@ -67,7 +67,7 @@ java -Xmx4G -jar otp/otp-latest-master.jar --server --graphs ./otp/data --analys
 
 Afterwards, OpenTripPlanner should be available on [http://localhost:8080/index.html](http://localhost:8080/index.html).
 
-The `--pointSet ./otp/pointsets` argument loads the [Amsterdam schools pointset](otp/pointsets/schools.geo.json) into OpenTripPlanner Analyst. You can see if OTP loads the file correctly by checking the URL http://localhost:8080/otp/pointsets/schools.geo.
+The `--pointSet ./otp/pointsets` argument loads the [Amsterdam schools pointset](otp/pointsets/schools.geo.json) into OpenTripPlanner Analyst. You can see if OTP loads the file correctly by checking the URL [http://localhost:8080/otp/pointsets/schools.geo](http://localhost:8080/otp/pointsets/schools.geo).
 
 ## Configuration
 
