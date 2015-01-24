@@ -9,6 +9,7 @@
     <link href='{{ site.baseurl }}/css/leaflet.css' rel='stylesheet' />
     <script src='{{ site.baseurl }}/js/leaflet.js'></script>
     <script src="{{ site.baseurl }}/js/d3.v3.min.js"></script>
+    <script src="//api.tiles.mapbox.com/mapbox.js/plugins/turf/v1.3.0/turf.min.js"></script>
     <script src='{{ site.baseurl }}/js/leaflet-hash.js'></script>
     <script src='{{ site.baseurl }}/js/OTPALayer.js'></script>
     <script src='{{ site.baseurl }}/js/LocationLayer.js'></script>
@@ -63,7 +64,8 @@
           colors: ['{{ site.data.style.1st_color }}', '{{ site.data.style.2nd_color }}', '{{ site.data.style.3rd_color }}'],
           isochroneStep: {{ site.data.filters.first.config.step }},
           pointset: pointset,
-          location: [52.37278, 4.90032]
+          location: [52.37278, 4.90032],
+          filterPointsets: true
         }).on('pointsets', function(e) {
 
         }).on('change', function(e) {

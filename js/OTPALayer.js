@@ -24,6 +24,12 @@ L.OTPALayer = L.FeatureGroup.extend({
     this._colors = options.colors;
     this._isochroneStep = options.isochroneStep;
 
+    if (options.filterPointsets) {
+      this._filterPointsets = options.filterPointsets;
+    } else {
+      this._filterPointsets = false;
+    }
+
     if (options.location) {
       this._location = L.latLng(options.location);
     }
@@ -77,11 +83,17 @@ L.OTPALayer = L.FeatureGroup.extend({
       pointToLayer: function (feature, latlng) {
           return L.circleMarker(latlng, self._pointsetStyle(feature.properties));
       }
+    });
+    this._reducedPointsetLayer = L.geoJson([], {
+      pointToLayer: function (feature, latlng) {
+          return L.circleMarker(latlng, self._pointsetStyle(feature.properties));
+      }
     }).addTo(map);
-
-    self.addLayer(this._locationLayer);
-    self.addLayer(this._isochronesLayer);
-    self.addLayer(this._pointsetLayer);
+    if (this._filterPointsets) {
+      this._reducedPointsetLayer.addTo(map);
+    } else {
+      this._pointsetLayer.addTo(map);
+    }
 
     self._createSurface(self._location);
 
@@ -184,6 +196,19 @@ L.OTPALayer = L.FeatureGroup.extend({
     this._isochronesLayer.clearLayers();
     this._isochronesLayer.addData(this._isochrones[minutes]);
     this._isochroneMinutes = minutes;
+
+    this._reducePointsets();
+  },
+
+  _reducePointsets: function() {
+    // Get isochronesLayer GeoJSON
+    isoGeo = this._isochronesLayer.toGeoJSON();
+    // Get pointsetsLayer GeoJson
+    pointsetsGeo = this._pointsetLayer.toGeoJSON();
+    // Check wich points are within the isochrones and display
+    insidePoints = turf.within(pointsetsGeo, isoGeo);
+    this._reducedPointsetLayer.clearLayers();
+    this._reducedPointsetLayer.addData(insidePoints);
   },
 
   _getPointsets: function(callback) {
