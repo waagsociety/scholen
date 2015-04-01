@@ -23,7 +23,7 @@ __This project requires that you have a server running with the latest version o
 Download the [latest OpenTripPlanner JAR](http://dev.opentripplanner.org/jars/otp-latest-master.jar) to the [`otp`](otp) directory:
 
 ```sh
-wget http://dev.opentripplanner.org/jars/otp-latest-master.jar -P otp
+wget http://dev.opentripplanner.org/jars/otp-0.14.0.jar -P otp
 ```
 
 OpenTripPlanner needs OpenStreetMap road network data and GTFS public transport schedules to do its routing and analysis, and expects them to be in the ['otp/data'](otp/data) directory.
@@ -62,7 +62,7 @@ In some versions of the NS GTFS file (`gtfs-iffns-latest.zip`), the required fie
 951,Eurostar,,Europe/Amsterdam,nl
 ```
 
-To fix this, just open `agency.txt` and add a any URL:
+To fix this, just open `agency.txt` and add a (fake) URL:
 
 ```csv
 751,U-OV,http://www.example.com/,Europe/Amsterdam,nl
@@ -74,13 +74,13 @@ To fix this, just open `agency.txt` and add a any URL:
 Build the OpenTripPlanner graph:
 
 ```sh
-java -Xmx4G -jar otp/otp-latest-master.jar --build ./otp/data
+java -Xmx4G -jar otp/otp-0.14.0.jar --build ./otp/data
 ```
 
 Run OpenTripPlanner server:
 
 ```sh
-java -Xmx4G -jar otp/otp-latest-master.jar --server --graphs ./otp/data --analyst --pointSet ./otp/pointsets
+java -Xmx4G -jar otp/otp-0.14.0.jar --server --graphs ./otp/data --analyst --pointSets ./otp/pointsets
 ```
 
 Afterwards, OpenTripPlanner should be available on [http://localhost:8080/index.html](http://localhost:8080/index.html).
