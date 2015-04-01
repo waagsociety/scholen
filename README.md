@@ -20,13 +20,23 @@ jekyll serve --baseurl ''
 
 __This project requires that you have a server running with the latest version of OpenTripPlanner.__
 
-Download the [latest OpenTripPlanner JAR](http://dev.opentripplanner.org/jars/otp-latest-master.jar) to the [`otp`](otp) directory:
+It's eastiest to put OTP, and its data and graphs under `/var/otp`:
+
+    cd /var
+    sudo mkdir otp
+    sudo chown <user>:<group> otp
+    cd otp
+    mkdir graphs
+    cd graphs
+    mkdir amsterdam
+
+Download the [latest OpenTripPlanner JAR](http://dev.opentripplanner.org/jars/otp-latest-master.jar) to `/var/otp`:
 
 ```sh
-wget http://dev.opentripplanner.org/jars/otp-0.14.0.jar -P otp
+wget http://dev.opentripplanner.org/jars/otp-0.14.0.jar -P /var/otp
 ```
 
-OpenTripPlanner needs OpenStreetMap road network data and GTFS public transport schedules to do its routing and analysis, and expects them to be in the ['otp/data'](otp/data) directory.
+OpenTripPlanner needs OpenStreetMap road network data and GTFS public transport schedules to do its routing and analysis.
 
 __Note: the bigger the GTFS and OSM files are, the more memory OpenTripPlanner needs. Please start with city-size source files! (Or buy lots of memory.)__
 
@@ -43,14 +53,12 @@ This website needs just data for the Amsterdam metropolitan area:
 You can download all the files needed for this project by running:
 
 ```sh
-cd otp/data
+cd /var/otp/graphs/amsterdam
 wget https://s3.amazonaws.com/metro-extracts.mapzen.com/amsterdam_netherlands.osm.pbf
 wget http://gtfs.ovapi.nl/ns/gtfs-iffns-latest.zip
 wget http://gtfs.ovapi.nl/connexxion/gtfs-kv1connexxion-latest.zip
 wget http://gtfs.ovapi.nl/ebs/gtfs-kv1ebs-latest.zip
 wget http://gtfs.ovapi.nl/gvb/gtfs-kv1gvb-latest.zip
-cd ..
-cd ..
 ```
 
 ### Error in `gtfs-iffns-latest.zip`
@@ -74,13 +82,13 @@ To fix this, just open `agency.txt` and add a (fake) URL:
 Build the OpenTripPlanner graph:
 
 ```sh
-java -Xmx4G -jar otp/otp-0.14.0.jar --build ./otp/data
+java -Xmx4G -jar /var/otp/otp-0.14.0.jar --build /var/otp/graphs/amsterdam
 ```
 
 Run OpenTripPlanner server:
 
 ```sh
-java -Xmx4G -jar otp/otp-0.14.0.jar --server --graphs ./otp/data --analyst --pointSets ./otp/pointsets
+java -Xmx4G -jar /var/otp/otp-0.14.0.jar --router amsterdam --server --analyst --pointSets ./otp/pointsets
 ```
 
 Afterwards, OpenTripPlanner should be available on [http://localhost:8080/index.html](http://localhost:8080/index.html).
