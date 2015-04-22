@@ -25,6 +25,7 @@ L.OTPALayer = L.FeatureGroup.extend({
     this._routerId = options.routerId;
     this._pointset = options.pointset;
     this._colors = options.colors;
+    this._maxWalkDistance = options.maxWalkDistance || 2000;
     this._isochroneStep = options.isochroneStep || 2;
 
     if (options.filterPointsets) {
@@ -147,6 +148,7 @@ L.OTPALayer = L.FeatureGroup.extend({
         + '&cutoffMinutes=' + this._cutoffMinutes
         + (this._routerId ? '&routerId=' + this._routerId : '')
         + (this._bannedRoutes ? '&bannedRoutes=' + this._bannedRoutes.join(',') : '')
+        + '&maxWalkDistance=' + this._maxWalkDistance
         + '&mode=' + this._modes.join(',')
         + '&batch=true';
     this._postJSON(path, function(json) {

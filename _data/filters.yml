@@ -16,9 +16,9 @@
       - title: Te voet
         value: WALK
       - title: Fiets
-        value: BICYCLE
+        value: 'BICYCLE,FERRY'
       - title: OV
-        value: TRANSIT
+        value: 'TRANSIT,WALK'
 
 - name: type
   title: Type

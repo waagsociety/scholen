@@ -7,6 +7,7 @@
     <title>Naar school in Amsterdam</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
     <link href='{{ site.baseurl }}/css/leaflet.css' rel='stylesheet' />
+    <link rel="icon" type="image/png" href="images/icon.png" />
     <script src='{{ site.baseurl }}/js/leaflet.js'></script>
     <script src="{{ site.baseurl }}/js/d3.v3.min.js"></script>
     <!--<script src="//api.tiles.mapbox.com/mapbox.js/plugins/turf/v1.3.0/turf.min.js"></script>-->
@@ -88,14 +89,21 @@
       {% endif %}
 
       {% if filter.type == 'checkbox' %}
-      d3.selectAll('input[name="filter-{{ filter.name }}"]').on("change", function() {
+      d3.selectAll('input[name="filter-{{ filter.name }}"]').on("click", function() {
         var checkedList = document.querySelectorAll('input[name="filter-{{ filter.name }}"]:checked');
         var checked = Array.prototype.slice.call(checkedList);
 
-        var values = checked.map(function(input) {
-          return input.value;
-        });
-        filterInput('filter-{{ filter.name }}', values);
+        if (checked.length > 0) {
+          var values = checked.map(function(input) {
+            return input.value;
+          });
+          filterInput('filter-{{ filter.name }}', values);
+        } else {
+          // User has deselected the last checkbox in a filter group.
+          d3.event.preventDefault();
+          return false;
+        }
+
       });
       {% endif %}
       {% endfor %}
