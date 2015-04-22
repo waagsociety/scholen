@@ -4,21 +4,21 @@
 <html>
   <head>
 		<meta charset="utf-8">
-    <title>{{ site.title }}</title>
+    <title>Naar school in Amsterdam</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
     <link href='{{ site.baseurl }}/css/leaflet.css' rel='stylesheet' />
     <script src='{{ site.baseurl }}/js/leaflet.js'></script>
     <script src="{{ site.baseurl }}/js/d3.v3.min.js"></script>
-    <script src="//api.tiles.mapbox.com/mapbox.js/plugins/turf/v1.3.0/turf.min.js"></script>
+    <!--<script src="//api.tiles.mapbox.com/mapbox.js/plugins/turf/v1.3.0/turf.min.js"></script>-->
     <script src='{{ site.baseurl }}/js/leaflet-hash.js'></script>
     <script src='{{ site.baseurl }}/js/OTPALayer.js'></script>
     <script src='{{ site.baseurl }}/js/LocationLayer.js'></script>
   </head>
   <body>
     <ul id="menu">
-      <li><div class="container">
-        <h1>{{ site.title }}</h1>
-        <span>Verplaats marker naar uw adres</span>
+      <li><div class="container" id="header">
+        <h1>Naar school in Amsterdam</h1>
+        <span>Reistijd naar alle middelbare scholen in Amsterdam, met 't OV, per fiets en te voet. <b>Verplaats 't huisje naar uw eigen adres om te beginnen</b>. Ontwikkeld door <a href="http://waag.org">Waag Society</a> met behulp van <a href="http://citysd.waag.org/">CitySDK</a>, <a href="http://www.opentripplanner.org/">OpenTripPlanner</a> en data van de <a href="http://www.ib-groep.nl/organisatie/open_onderwijsdata/">Dienst Uitvoering Onderwijs</a>.</span>
 			</div></li>
       {% for filter in site.data.filters %}
       <li><div class="container">
@@ -51,53 +51,92 @@
   			maxZoom: 18
   		});
 
-      map.setView([52.37278, 4.90032], 13);
-      var hash = new L.Hash(map);
+      var otpaLayer;
 
   		var tileUrl = '{{ site.data.map.tiles }}',
-          tileLayer = L.tileLayer(tileUrl, {attribution: '{{ site.data.map.attribution }}'}).addTo(map);
+          tileLayer = L.tileLayer(tileUrl, {
+            attribution: '{{ site.data.map.attribution }}',
+            subdomains: '{{ site.data.map.subdomains }}'
+          }).addTo(map);
 
-      // // TODO: make sure order of on() and addTo() does not matter
-      var otpaLayer = L.otpaLayer(endpoint, {
-          cutoffMinutes: d3.select("#filter-traveltime").attr("max"),
-          isochroneMinutes: d3.select("#filter-traveltime").attr("value"),
-          colors: ['{{ site.data.style.1st_color }}', '{{ site.data.style.2nd_color }}', '{{ site.data.style.3rd_color }}'],
-          isochroneStep: {{ site.data.filters.first.config.step }},
-          pointset: pointset,
-          location: [52.37278, 4.90032],
-          filterPointsets: true
-        }).on('pointsets', function(e) {
+      // TODO: decide whether to use Leaflet Hash
+      //var hash = new L.Hash(map);
 
-        }).on('change', function(e) {
-          //update(indicators, range.value * 60);
-      }).addTo(map);
+      var center = [52.37278, 4.90032];
+      map.setView(center, 13);
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          center = [position.coords.latitude, position.coords.longitude];
+          initializeOtpaLayer(center);
+          map.panTo(center);
+        });
+      } else {
+        initializeOtpaLayer(center);
+      }
 
       {% for filter in site.data.filters %}
       {% if filter.type == 'range' %}
+
+      // TODO: remove d3!
+      //input.onclick = function() {  };
+
       d3.select("#filter-{{ filter.name }}").on("input", function() {
         var value = d3.select(this).property("value");
-        filterInput(this, value);
+        filterInput(this.id, value);
         d3.select("label[for=filter-{{ filter.name }}]").html(value);
+      });
+      {% endif %}
+
+      {% if filter.type == 'checkbox' %}
+      d3.selectAll('input[name="filter-{{ filter.name }}"]').on("change", function() {
+        var checkedList = document.querySelectorAll('input[name="filter-{{ filter.name }}"]:checked');
+        var checked = Array.prototype.slice.call(checkedList);
+
+        var values = checked.map(function(input) {
+          return input.value;
+        });
+        filterInput('filter-{{ filter.name }}', values);
       });
       {% endif %}
       {% endfor %}
 
-      function filterInput(filter, value) {
-        if (filter.id === 'filter-traveltime') {
+      function filterInput(filterId, value) {
+        if (filterId === 'filter-traveltime') {
           otpaLayer.setTimeLimit(value);
+        } else if (filterId === 'filter-mode') {
+          otpaLayer.setModes(value);
         }
       }
 
-      function update(data, seconds) {
+      function initializeOtpaLayer(location) {
+        // // TODO: make sure order of on() and addTo() does not matter
+        otpaLayer = L.otpaLayer(endpoint, {
+            cutoffMinutes: d3.select("#filter-traveltime").attr("max"),
+            isochroneMinutes: d3.select("#filter-traveltime").attr("value"),
+            colors: ['{{ site.data.style.1st_color }}', '{{ site.data.style.2nd_color }}', '{{ site.data.style.3rd_color }}'],
+            isochroneStep: {{ site.data.filters.first.config.step }},
+            pointset: pointset,
+            location: location,
+            filterPointsets: true,
+            routerId: 'amsterdam',
+            bannedRoutes: ['0__generated_0'],
+            modes: ['WALK', 'BICYCLE', 'TRANSIT']
+          }).on('pointsets', function(e) {
 
+          }).on('change', function(e) {
+
+          }).addTo(map);
       }
+
+      document.body.style.minHeight = document.getElementById("menu").clientHeight + "px";
+
     </script>
     <svg>
       <defs>
         <pattern id="isochrone-pattern" patternUnits="userSpaceOnUse" x="0" y="0" width="8" height="8">
           <g>
             <path d="M0,0 L8,8"/>
-            <path d="M8,0 L-8,8"/>
+            <!-- <path d="M8,0 L-8,8"/> -->
           </g>
         </pattern>
       </defs>

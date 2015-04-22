@@ -88,7 +88,7 @@ java -Xmx4G -jar /var/otp/otp-0.14.0.jar --build /var/otp/graphs/amsterdam
 Run OpenTripPlanner server:
 
 ```sh
-java -Xmx4G -jar /var/otp/otp-0.14.0.jar --router amsterdam --server --analyst --pointSets ./otp/pointsets
+java -Xmx4G -jar /var/otp/otp-0.14.0.jar --router amsterdam --server --analyst --pointSets ./pointsets
 ```
 
 Afterwards, OpenTripPlanner should be available on [http://localhost:8080/index.html](http://localhost:8080/index.html).

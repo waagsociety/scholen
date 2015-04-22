@@ -1,4 +1,5 @@
 center: [52.37278, 4.90032]
 zoom: 13
-tiles: 'https://b.tiles.mapbox.com/v4/aj.03e9e12d/{z}/{x}/{y}.png?access_token=sk.eyJ1IjoiYmVydHNwYWFuIiwiYSI6InVOOERQamsifQ.t8Vq3xnXV2v6MOPw9MU6qg'
-attribution: <a href="https://www.mapbox.com/blog/pencil-drawn-style/"><i>Pencil</i> map style</a> by <a href="http://mapbox.com/">Mapbox</a> | Map © OpenStreetMap contributors
+tiles: 'http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'
+attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+subdomains: 'abcd'

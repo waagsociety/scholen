@@ -2,14 +2,14 @@
  * Class calls OTP indicators API
  *
  * TODO: make another, abstract class, to make choosing between
- * TODO: stop using `var self = this`, find official Leaflet way to do this
  * client-side/server-side classification/binning and rendering abstract/transparent
+ * TODO: stop using `var self = this`, find official Leaflet way to do this. Use bind.
  */
 
 L.OTPALayer = L.FeatureGroup.extend({
 
   options: {
-    cutoffMinutes: 90
+
   },
 
   initialize: function (endpoint, options) {
@@ -18,11 +18,14 @@ L.OTPALayer = L.FeatureGroup.extend({
     if (this._endpoint.slice(-1) !== '/') {
       this._endpoint += '/';
     }
-    this._cutoffMinutes = options.cutoffMinutes;
-    this._isochroneMinutes = options.isochroneMinutes;
+    this._cutoffMinutes = options.cutoffMinutes || 90;
+    this._isochroneMinutes = options.isochroneMinutes || 10;
+    this._bannedRoutes = options.bannedRoutes || [];
+    this._modes = options.modes || ['WALK', 'TRANSIT'];
+    this._routerId = options.routerId;
     this._pointset = options.pointset;
     this._colors = options.colors;
-    this._isochroneStep = options.isochroneStep;
+    this._isochroneStep = options.isochroneStep || 2;
 
     if (options.filterPointsets) {
       this._filterPointsets = options.filterPointsets;
@@ -69,7 +72,7 @@ L.OTPALayer = L.FeatureGroup.extend({
           lineJoin: 'round',
           weight: 4,
           //dashArray: '5, 5',
-          fillOpacity: '0.5',
+          fillOpacity: '0.3',
           clickable: false
         };
         if (feature.properties.Time == this._cutoffMinutes * 60) {
@@ -121,6 +124,11 @@ L.OTPALayer = L.FeatureGroup.extend({
     }
   },
 
+  setModes: function(modes) {
+    this._modes = modes;
+    this._createSurface(this._location);
+  },
+
   _pointsetStyle: function(properties) {
     return {
       radius: 6,
@@ -137,7 +145,9 @@ L.OTPALayer = L.FeatureGroup.extend({
     var path = 'surfaces?'
         + 'fromPlace=' + location.lat + ',' + location.lng
         + '&cutoffMinutes=' + this._cutoffMinutes
-        //+ '&mode=BICYCLE'
+        + (this._routerId ? '&routerId=' + this._routerId : '')
+        + (this._bannedRoutes ? '&bannedRoutes=' + this._bannedRoutes.join(',') : '')
+        + '&mode=' + this._modes.join(',')
         + '&batch=true';
     this._postJSON(path, function(json) {
       if (json && json.id) {
@@ -155,7 +165,9 @@ L.OTPALayer = L.FeatureGroup.extend({
     var self = this;
     var path = 'surfaces/' + surfaceId
         + '/indicator'
-        + '?targets=' + pointset;
+        + '?targets=' + pointset
+        + '&detail=true';
+
     this._getJSON(path, function(indicator) {
       self._indicator = indicator;
       self.fireEvent('change', {data: indicator});
@@ -171,7 +183,7 @@ L.OTPALayer = L.FeatureGroup.extend({
       // Index isochrones, keying on time in minutes
       self._isochrones = {};
       isochrones.features.forEach(function(feature) {
-        self._isochrones[parseInt(feature.properties.Time) / 60] = feature;
+        self._isochrones[parseInt(feature.properties.time) / 60] = feature;
       });
       self._displayIsochrone();
     });
@@ -194,6 +206,7 @@ L.OTPALayer = L.FeatureGroup.extend({
     minutes = minDiffMinutes;
 
     this._isochronesLayer.clearLayers();
+
     this._isochronesLayer.addData(this._isochrones[minutes]);
     this._isochroneMinutes = minutes;
 
@@ -201,14 +214,15 @@ L.OTPALayer = L.FeatureGroup.extend({
   },
 
   _reducePointsets: function() {
-    // Get isochronesLayer GeoJSON
-    isoGeo = this._isochronesLayer.toGeoJSON();
-    // Get pointsetsLayer GeoJson
-    pointsetsGeo = this._pointsetLayer.toGeoJSON();
-    // Check wich points are within the isochrones and display
-    insidePoints = turf.within(pointsetsGeo, isoGeo);
-    this._reducedPointsetLayer.clearLayers();
-    this._reducedPointsetLayer.addData(insidePoints);
+    console.log('reduce!')
+    // // Get isochronesLayer GeoJSON
+    // isoGeo = this._isochronesLayer.toGeoJSON();
+    // // Get pointsetsLayer GeoJson
+    // pointsetsGeo = this._pointsetLayer.toGeoJSON();
+    // // Check wich points are within the isochrones and display
+    // insidePoints = turf.within(pointsetsGeo, isoGeo);
+    // this._reducedPointsetLayer.clearLayers();
+    // this._reducedPointsetLayer.addData(insidePoints);
   },
 
   _getPointsets: function(callback) {

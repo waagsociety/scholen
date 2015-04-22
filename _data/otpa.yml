@@ -1,4 +1,4 @@
-endpoint: http://localhost:8080/otp/
+endpoint: http://dev.opentripplanner.org:9090/otp/
 pointset: schools.geo
 indicator: kandidaten
 

@@ -1,5 +1,5 @@
 - name: traveltime
-  title: Maximale reistijd (minuten)
+  title: Maximale reistijd
   type: range
   config:
     value: 20
@@ -8,20 +8,20 @@
     step: 2
     units: minuten
 
-- name: transportation
+- name: mode
   title: Vervoersmiddelen
   type: checkbox
   config:
     options:
       - title: Te voet
-        value: walking
+        value: WALK
       - title: Fiets
-        value: bicycle
+        value: BICYCLE
       - title: OV
-        value: public_transport
+        value: TRANSIT
 
-- name: schooltype
-  title: Schooltype
+- name: type
+  title: Type
   type: checkbox
   config:
     options:
