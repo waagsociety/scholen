@@ -26,11 +26,12 @@ L.OTPALayer = L.FeatureGroup.extend({
 
     this._pointsetId = options.pointsetId;
     this._pointsetFilters = options.pointsetFilters || {};
-    this._pointsetFilterByIsochrones = options.pointsetFilterByIsochrones !== undefined ? options.pointsetFilterByIsochrones: true,
+    this._pointsetFilterByIsochrones = options.pointsetFilterByIsochrones !== undefined ? options.pointsetFilterByIsochrones: true;
 
     this._colors = options.colors;
     this._maxWalkDistance = options.maxWalkDistance || 2000;
     this._isochroneStep = options.isochroneStep || 2;
+    this._showMaxIsochrone = options.showMaxIsochrone || false;
 
     this._requests = [];
 
@@ -52,7 +53,7 @@ L.OTPALayer = L.FeatureGroup.extend({
       this.setLocation(latlng);
     }.bind(this)).addTo(map);
 
-    this._isochronesLayer = L.geoJson([], {
+    this._isochronesLayer = L.geoJson(null, {
       style: function(feature) {
         var style = {
           color: this._colors[0],
@@ -71,6 +72,27 @@ L.OTPALayer = L.FeatureGroup.extend({
         return style;
       }.bind(this)
     }).addTo(map);
+
+    if (this._showMaxIsochrone) {
+      this._maxIsochroneLayer = L.geoJson(null, {
+        style: function(feature) {
+          var style = {
+            color: this._colors[0],
+            fill: false,
+            opacity: 1,
+            lineCap: 'round',
+            lineJoin: 'round',
+            weight: 2,
+            dashArray: '5, 5',
+            clickable: false
+          };
+          if (feature.properties.Time == this._cutoffMinutes * 60) {
+            style.weight = 1;
+          }
+          return style;
+        }.bind(this)
+      }).addTo(map);
+    }
 
     if (this._pointsetId) {
       this._pointsetLayer = L.geoJson(null, {
@@ -177,10 +199,23 @@ L.OTPALayer = L.FeatureGroup.extend({
     this._getJSON(path, function(isochrones) {
 
       // Index isochrones, keying on time in minutes
+      var maxIsochrone;
+      var maxMinutes = Number.NEGATIVE_INFINITY;
       this._isochrones = {};
       isochrones.features.forEach(function(feature) {
-        this._isochrones[parseInt(feature.properties.time) / 60] = feature;
+        var minutes = feature.properties.time / 60;
+        if (maxMinutes < minutes) {
+          maxMinutes = minutes;
+        }
+
+        this._isochrones[minutes] = feature;
       }.bind(this));
+
+      if (this._showMaxIsochrone) {
+        this._maxIsochroneLayer.clearLayers();
+        this._maxIsochroneLayer.addData(this._isochrones[maxMinutes]);
+      }
+
       this._displayIsochrone();
     }.bind(this));
   },
@@ -202,8 +237,8 @@ L.OTPALayer = L.FeatureGroup.extend({
     minutes = minDiffMinutes;
 
     this._isochronesLayer.clearLayers();
-
     this._isochronesLayer.addData(this._isochrones[minutes]);
+
     this._isochroneMinutes = minutes;
 
     this._filterPointsets();
