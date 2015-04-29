@@ -1,6 +1,6 @@
 # Reachability of schools in Amsterdam
 
-First version of [Jekyll](http://jekyllrb.com/) + [Leaflet](http://leafletjs.com/) site, which computes and shows reachability of schools in Amsterdam using [OpenTripPlanner Analyst](http://www.opentripplanner.org/analyst/). A later version will use dynamic data from a [CitySDK LD API](https://github.com/waagsociety/citysdk-ld) endpoint to load school data.
+[Jekyll](http://jekyllrb.com/) + [Leaflet](http://leafletjs.com/) + [Turf.js](http://turfjs.org/) site, which computes and shows reachability of schools in Amsterdam using [OpenTripPlanner Analyst](http://www.opentripplanner.org/analyst/). School data is also accessible via Waag Society's [CitySDK LD API endpoint](https://github.com/waagsociety/citysdk-ld).
 
 The site can be used to answer the following question:
 
