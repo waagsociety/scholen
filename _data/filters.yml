@@ -14,7 +14,7 @@
   config:
     options:
       - title: Te voet
-        value: WALK
+        value: WALK,FERRY
       - title: Fiets
         value: 'BICYCLE,FERRY'
       - title: OV
@@ -25,36 +25,34 @@
   type: checkbox
   config:
     options:
-      - title: VMBO GT
-        value: vmbogt
-      - title: VMBO B
-        value: vmbob
-      - title: VMBO K
-        value: vmbok
+      - title: PRO
+        value: PRO
+      - title: VBO
+        value: VBO
       - title: HAVO
-        value: havo
+        value: HAVO
       - title: VWO
-        value: vwo
+        value: VWO
 
-- name: eindexamencijfer
-  title: Minimaal gemiddeld eindexamencijfer
-  type: range
-  config:
-    value: 4
-    min: 1
-    max: 10
-    step: 1
-    units:
+# - name: eindexamencijfer
+#   title: Minimaal gemiddeld eindexamencijfer
+#   type: range
+#   config:
+#     value: 4
+#     min: 1
+#     max: 10
+#     step: 1
+#     units:
 
-- name: dronkers
-  title: Minimaal Dronkerscijfer (2012)
-  type: range
-  config:
-    value: 4
-    min: 1
-    max: 10
-    step: 1
-    units:
+# - name: dronkers
+#   title: Minimaal Dronkerscijfer (2012)
+#   type: range
+#   config:
+#     value: 4
+#     min: 1
+#     max: 10
+#     step: 1
+#     units:
 
 - name: students
   title: Maximaal aantal leerlingen

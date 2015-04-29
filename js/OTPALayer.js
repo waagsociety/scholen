@@ -80,22 +80,32 @@ L.OTPALayer = L.FeatureGroup.extend({
     return this;
   },
 
-  setLocation: function (latlng) {
+  setLocation: function(latlng) {
     this._location = latlng;
     this._createSurface(this._location);
   },
 
-  setPointset: function (pointset) {
+  setPointset: function(pointset) {
     this._pointset = pointset;
     // TODO: check if pointset is in this._pointsets
     this._getIndicator(this._surface.id, this._pointsetId);
   },
 
-  setTimeLimit: function (timeLimit) {
+  setTimeLimit: function(timeLimit) {
     if (this._indicator && this._isochrones) {
       this._isochronesMinutes = timeLimit;
       this._displayIsochrone(timeLimit);
     }
+  },
+
+  addPointsetFilter: function(id, filter) {
+    this._pointsetFilters[id] = filter;
+    this._filterPointsets();
+  },
+
+  removePointsetFilter: function(id) {
+    delete this._pointsetFilters[id];
+    this._filterPointsets();
   },
 
   setModes: function(modes) {

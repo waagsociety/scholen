@@ -67,7 +67,9 @@
       map.setView(center, 13);
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
+          // TODO: check if center is in amsterdam bounds
           center = [position.coords.latitude, position.coords.longitude];
+
           initializeOtpaLayer(center);
           map.panTo(center);
         });
@@ -113,6 +115,20 @@
           otpaLayer.setTimeLimit(value);
         } else if (filterId === 'filter-mode') {
           otpaLayer.setModes(value);
+        } else if (filterId === 'filter-students') {
+          otpaLayer.addPointsetFilter('students', function(feature) {
+            return feature.properties.structured.leerlingen < parseInt(value);
+          });
+        //} else if (filterId === 'filter-dronkers') {
+        } else if (filterId === 'filter-type') {
+          otpaLayer.addPointsetFilter('type', function(feature) {
+            var filtered = false;
+            value.forEach(function(key) {
+              filtered |= Boolean(feature.properties.structured['onderwijsstructuur.' + key]);
+            });
+            return filtered;
+          });
+        //} else if (filterId === 'filter-eindexamencijfer') {
         }
       }
 
@@ -124,12 +140,12 @@
             colors: ['{{ site.data.style.1st_color }}', '{{ site.data.style.2nd_color }}', '{{ site.data.style.3rd_color }}'],
             isochroneStep: {{ site.data.filters.first.config.step }},
             pointsetId: pointset,
-            pointsetFilters: {
-              vwo: function(feature) {
-                //return feature.properties.structured['onderwijsstructuur.VWO'] == 1;
-                return true;
-              }
-            },
+            // pointsetFilters: {
+            //   vwo: function(feature) {
+            //     //return feature.properties.structured['onderwijsstructuur.VWO'] == 1;
+            //     return true;
+            //   }
+            // },
             pointsetFilterByIsochrones: true,
             location: position,
             routerId: 'amsterdam',
