@@ -67,8 +67,26 @@
       map.setView(center, 13);
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
-          // TODO: check if center is in amsterdam bounds
-          center = [position.coords.latitude, position.coords.longitude];
+          var point1 = {
+            type: "Feature",
+            geometry: {
+              type: "Point",
+              coordinates: [4.8817, 52.3610]
+            }
+          };
+
+          var point2 = {
+            type: "Feature",
+            geometry: {
+              type: "Point",
+              coordinates: [position.coords.longitude, position.coords.latitude]
+            }
+          };
+
+          var distance = turf.distance(point1, point2, 'kilometers');
+          if (distance < 15) {
+            center = [position.coords.latitude, position.coords.longitude];
+          }
 
           initializeOtpaLayer(center);
           map.panTo(center);
