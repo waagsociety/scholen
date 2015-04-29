@@ -2,3 +2,5 @@ endpoint: http://dev.opentripplanner.org:9090/otp/
 pointset: schools.geo
 indicator: kandidaten
 
+time: 09:00am
+date: 04-29-2015

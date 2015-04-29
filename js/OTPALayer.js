@@ -21,6 +21,9 @@ L.OTPALayer = L.FeatureGroup.extend({
     this._modes = options.modes || ['WALK', 'TRANSIT'];
     this._routerId = options.routerId;
 
+    this._time = options.time;
+    this._date = options.date;
+
     this._pointsetId = options.pointsetId;
     this._pointsetFilters = options.pointsetFilters || {};
     this._pointsetFilterByIsochrones = options.pointsetFilterByIsochrones !== undefined ? options.pointsetFilterByIsochrones: true,
@@ -137,6 +140,10 @@ L.OTPALayer = L.FeatureGroup.extend({
     var path = 'surfaces?'
         + 'fromPlace=' + location.lat + ',' + location.lng
         + '&cutoffMinutes=' + this._cutoffMinutes
+
+        + (this._time ? '&time=' + this._time : '')
+        + (this._date ? '&date=' + this._date : '')
+
         + (this._routerId ? '&routerId=' + this._routerId : '')
         + (this._bannedRoutes ? '&bannedRoutes=' + this._bannedRoutes.join(',') : '')
         + '&maxWalkDistance=' + this._maxWalkDistance

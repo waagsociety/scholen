@@ -19,7 +19,7 @@
     <ul id="menu">
       <li><div class="container" id="header">
         <h1>Naar school in Amsterdam</h1>
-        <span>Reistijd naar alle middelbare scholen in Amsterdam, met 't OV, per fiets en te voet. <b>Verplaats 't huisje naar uw eigen adres om te beginnen</b>. Ontwikkeld door <a href="http://waag.org">Waag Society</a> met behulp van <a href="http://citysd.waag.org/">CitySDK</a>, <a href="http://www.opentripplanner.org/">OpenTripPlanner</a> en data van de <a href="http://www.ib-groep.nl/organisatie/open_onderwijsdata/">Dienst Uitvoering Onderwijs</a>. OpenTripPlanner verkiest OV boven fietsen en lopen (en lopen boven fietsen), en houdt geen rekening met stoplichten! Broncode op <a href="https://github.com/waagsociety/scholen">GitHub</a>.</span>
+        <span>Reistijd naar alle middelbare scholen in Amsterdam, met 't OV, per fiets en te voet. <b>Verplaats 't huisje naar uw eigen adres om te beginnen</b>. Ontwikkeld door <a href="http://waag.org">Waag Society</a> met behulp van <a href="http://citysd.waag.org/">CitySDK</a>, <a href="http://www.opentripplanner.org/">OpenTripPlanner</a> en data van de <a href="http://www.ib-groep.nl/organisatie/open_onderwijsdata/">Dienst Uitvoering Onderwijs</a> (2014). OpenTripPlanner verkiest OV boven fietsen en lopen (en lopen boven fietsen), en houdt geen rekening met stoplichten! Broncode op <a href="https://github.com/waagsociety/scholen">GitHub</a>.</span>
 			</div></li>
       {% for filter in site.data.filters %}
       <li><div class="container">
@@ -154,15 +154,11 @@
             colors: ['{{ site.data.style.1st_color }}', '{{ site.data.style.2nd_color }}', '{{ site.data.style.3rd_color }}'],
             isochroneStep: {{ site.data.filters.first.config.step }},
             pointsetId: pointset,
-            // pointsetFilters: {
-            //   vwo: function(feature) {
-            //     //return feature.properties.structured['onderwijsstructuur.VWO'] == 1;
-            //     return true;
-            //   }
-            // },
             pointsetFilterByIsochrones: true,
             location: position,
             routerId: 'amsterdam',
+            time: '{{ site.data.otpa.time }}',
+            date: '{{ site.data.otpa.date }}',
             bannedRoutes: ['0__generated_0'],
             modes: ['WALK', 'BICYCLE', 'TRANSIT']
           }).on('pointsets', function(e) {
