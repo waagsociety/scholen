@@ -29,6 +29,8 @@ L.OTPALayer = L.FeatureGroup.extend({
     this._maxWalkDistance = options.maxWalkDistance || 2000;
     this._isochroneStep = options.isochroneStep || 2;
 
+    this._requests = [];
+
     if (options.location) {
       this._location = L.latLng(options.location);
     }
@@ -125,6 +127,13 @@ L.OTPALayer = L.FeatureGroup.extend({
   },
 
   _createSurface: function(location) {
+    // First, abort all busy requests
+    this._requests.forEach(function(xhr) {
+      xhr.abort();
+    });
+
+    this._requests = [];
+
     var path = 'surfaces?'
         + 'fromPlace=' + location.lat + ',' + location.lng
         + '&cutoffMinutes=' + this._cutoffMinutes
@@ -228,16 +237,22 @@ L.OTPALayer = L.FeatureGroup.extend({
   },
 
   _postJSON: function(path, callback) {
-    d3.xhr(this._endpoint + path).post(null, function(error, data) {
-      if (data && data.response) {
-        callback(JSON.parse(data.response));
-      }
+    var xhr = $.ajax({
+      type: "POST",
+      url: this._endpoint + path,
+      data: null,
+      success: callback
     });
+    this._requests.push(xhr);
   },
 
   _getJSON: function(path, callback) {
-    // Uses D3's json call. TODO: replace with regular JS ajax call?
-    d3.json(this._endpoint + path, callback);
+    var xhr = $.ajax({
+      dataType: "json",
+      url: this._endpoint + path,
+      success: callback
+    });
+    this._requests.push(xhr);
   }
 
 });
