@@ -79,11 +79,11 @@ L.OTPALayer = L.FeatureGroup.extend({
           var style = {
             color: this._colors[0],
             fill: false,
-            opacity: 1,
+            opacity: .8,
             lineCap: 'round',
             lineJoin: 'round',
             weight: 2,
-            dashArray: '5, 5',
+            dashArray: '2, 4',
             clickable: false
           };
           if (feature.properties.Time == this._cutoffMinutes * 60) {
